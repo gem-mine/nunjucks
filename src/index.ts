@@ -25,7 +25,6 @@ export interface OPTIONS {
 function _createEnv(options: OPTIONS) {
   const { path = 'public', watch, noCache, autoescape, throwOnUndefined, trimBlocks, lstripBlocks, filters } = options
 
-  console.log(path)
   const env = new nunjucks.Environment(
     new nunjucks.FileSystemLoader(path, {
       watch,
